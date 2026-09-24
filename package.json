@@ -1,0 +1,12 @@
+{
+  "name": "cta-smart-alerts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "workspaces": [
+    "server"
+  ],
+  "scripts": {
+    "start": "node server/app.js"
+  }
+}

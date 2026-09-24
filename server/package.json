@@ -1,0 +1,9 @@
+{
+  "name": "cta-server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
