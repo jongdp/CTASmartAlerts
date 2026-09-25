@@ -4,7 +4,8 @@
   "private": true,
   "type": "commonjs",
   "workspaces": [
-    "server"
+    "server",
+    "shared"
   ],
   "scripts": {
     "start": "node server/app.js"

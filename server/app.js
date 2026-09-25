@@ -6,6 +6,7 @@
 //   Jonathan Garcia de Paz
 //
 
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
@@ -23,6 +24,15 @@ app.get('/',(req, res)=>{
     res.status(500).json({ status: err.message });
   }
 });
+
+//
+// API routes — one file per endpoint (same pattern as Project 02)
+//
+
+// 1. GET /arrivals — live CTA predictions (?routeId=&stopId=&type=bus|train)
+const getArrivals = require('./routes/api_get_arrivals.js');
+app.get('/arrivals', getArrivals.get_arrivals)
+
 
 app.listen(port, () => {
   startTime = Date.now();

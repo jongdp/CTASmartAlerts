@@ -1,10 +1,10 @@
 {
-  "name": "cta-server",
+  "name": "@cta/shared",
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",
+  "main": "services/ctaClient.js",
   "dependencies": {
-    "dotenv": "^18.0.4",
-    "express": "^5.2.1"
+    "axios": "^1.20.0"
   }
 }
