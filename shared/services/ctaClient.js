@@ -7,7 +7,7 @@
 const axios = require('axios');
 
 const BUS_BASE   = 'http://www.ctabustracker.com/bustime/api/v2';
-const TRAIN_BASE = 'https://lapi.transitchicago.com/api/1.0';
+const TRAIN_BASE = 'http://lapi.transitchicago.com/api/1.0';
 
 //
 // getBusPredictions
